@@ -1,10 +1,10 @@
-function QbPaths()
+function QbPaths(parent)
 {
     this.i_qbpaths = Qt.createQmlObject('import Qb.Core 1.0; QbPaths {}',
-                                        null,
+                                        parent,
                                         "QbPathsJS");;
 }
 
 QbPaths.prototype.documents = function() {
-    return this.i_paths.documents();
+    return this.i_qbpaths.documents();
 };
