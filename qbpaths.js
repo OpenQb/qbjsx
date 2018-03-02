@@ -8,3 +8,7 @@ function QbPaths(parent)
 QbPaths.prototype.documents = function() {
     return this.i_qbpaths.documents();
 };
+
+QbPaths.prototype.download = function() {
+    return this.i_qbpaths.download();
+};
